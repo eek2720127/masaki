@@ -1,14 +1,12 @@
-# 環境構築
+# React + Vite
 
-1. Git
-2. Node.js（v18以降を推奨します。）
-3. Yarn (v1)
-4. Visual Studio Code
-5. Railway VSCode 拡張機能
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-上記 5 つをインストールする必要があります。インストールできているかの確認やインストール方法は、
-[Railway 準備編](https://www.notion.so/techbowl/Railway-ceba695d5014460e9733c2a46318cdec) をご確認いただき、挑戦の準備をしましょう。
-※ GitHub Codespaces についての資料はスキップしてください。
+Currently, two official plugins are available:
 
-その他リポジトリの更新の仕方や、トラブルシューティングについても上記の Railway 準備編にございます。
-何かあった際は、まずそちらを確認しましょう。
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -1,48 +1,27 @@
 {
   "name": "react-stations",
-  "version": "0.1.0-alpha.0",
-  "main": "index.js",
-  "repository": "https://github.com/TechBowl-japan/react-stations.git",
-  "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
-  "license": "MIT",
-  "private": false,
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "dependencies": {
-    "@testing-library/react": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@types/react-test-renderer": "^18.0.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "autoprefixer": "^10.4.15",
-    "browserslist": "^4.21.10",
-    "eslint": "^8.47.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "jsdom": "^22.1.0",
-    "postcss": "^8.4.28",
-    "postcss-preset-env": "^9.1.1",
-    "prettier": "^3.0.2",
-    "react-test-renderer": "^18.2.0",
-    "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.4"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "clean": "rimraf dist",
-    "fmt": "yarn fmt:js",
-    "fmt:dry": "yarn fmt:js:dry",
-    "fmt:js": "prettier --write \"./src/**/*.js\"",
-    "fmt:js:dry": "prettier --check \"./src/**/*.js\"",
-    "lint": "eslint ./src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --ext .js ./src --fix"
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "vite": "^7.0.4"
   }
 }
