@@ -20,7 +20,10 @@ export function ThreadList() {
       </Link>
       <ul>
         {threads.map((thread) => (
-          <li key={thread.id}>{thread.title}</li>
+          <li key={thread.id}>
+            {/* スレッドタイトルをクリックすると /threads/ID に飛ぶ */}
+            <Link to={`/threads/${thread.id}`}>{thread.title}</Link>
+          </li>
         ))}
       </ul>
     </section>
