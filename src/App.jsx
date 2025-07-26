@@ -1,9 +1,8 @@
-// src/App.jsx
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { ThreadList } from "./ThreadList";
 import { ThreadNew } from "./ThreadNew";
-import { ThreadShow } from "./ThreadShow"; // ← 追加
+import { ThreadShow } from "./ThreadShow"; 
 import "./App.css";
 
 export default function App() {
